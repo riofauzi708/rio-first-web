@@ -4,6 +4,7 @@
         <title>My Project</title>
         <link rel="stylesheet" href="asset/css/index.css">
         <link rel="stylesheet" href="asset/css/nav.css">
+        <link rel="stylesheet" href="asset/css/blog.css">
     </head>
     <body>
         <nav class="navbar">
@@ -25,6 +26,46 @@
                 </div>
             </ul>
         </nav>
+
+        <h1>ADD MY PROJECT</h1>
+    <div class="first-layer">
+        <div>
+            <label class=" label-style blog-form" for="">Project Name</label>
+            <input class="blog-form input-style" type="text">
+
+        <div class="second-layer">
+            <div class="third-layer">
+                 <label class="label-style" for="">Start Date</label>
+                 <input class="input-style" type="text">
+            </div>
+            <div class="third-layer">
+                 <label class="label-style" for="">End Date</label>
+                 <input class="input-style" type="text">
+            </div>
+        </div>
+        
+            <label class="label-style blog-form" for="description">Description</label>
+            <textarea class="input-style" id="description" style="width: 502px; height: 200px;"></textarea>
+        
+            <label class="label-style blog-form" for="">Technologies</label>
+        <div class="checkbox-style">
+            <input type="checkbox">
+            <label class="label-font" for="">Node Js</label>
+            <input style="margin-left: 120px;" type="checkbox">
+            <label class="label-font" for="">Next Js</label>
+        </div>
+        <div class="checkbox-style">
+            <input type="checkbox">
+            <label class="label-font" for="">React Js</label>
+            <input style="margin-left: 116px;" type="checkbox">
+            <label class="label-font" for="">TypeScript</label>
+        </div>
+            <label class="label-style blog-form" for="">Upload Image</label>
+            <Input class="blog-form input-file" type="file">
+            <button class="btn-submit" onclick="submitData()">submit</button>
+        
+        </div>
+    </div>
         
     </body>
 </html>
