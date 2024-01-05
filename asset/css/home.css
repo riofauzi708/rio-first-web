@@ -1,0 +1,75 @@
+body {
+    background-color: #e3e7eb;
+}
+.img-style {
+    width: 30px; 
+    height: 30px;
+    align-items: center;
+}
+.based-color {
+    background-color: #fefefe;
+    margin: 100px auto;
+    padding-bottom: 50px;
+}
+.section-layout {
+    display: flex; 
+    justify-content: space-between;
+}
+.content-style {
+    margin: 70px 70px 60px 60px; 
+    width: auto; 
+    height: auto; 
+    text-align: justify;
+}
+.ul-style {
+    list-style: none;
+}
+.link-cd {
+    display: flex; 
+    align-items: center; 
+    margin-top: 40px;
+}
+.contact-btn {
+    padding: 18px;
+    background-color: #111727;
+    color: white;
+    border-radius: 45px;
+    width: 100px;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.download-btn {
+    margin-left: 30px; 
+    text-decoration: none;
+}
+.logo-download {
+    width: 40px; 
+    height: 40px; 
+    padding-right: 10px;
+}
+.logo-icon {
+    display: flex; 
+    gap: 15px; 
+    margin-top: 40px;
+}
+.image-layout {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.border-image {
+    box-shadow: 0 0 1px 0 black; 
+    border-radius: 5px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: 50px;
+    padding-bottom: 40px;
+    width: 270px;
+    height: 370px;
+    background-color: white;
+    text-align: center;
+}
