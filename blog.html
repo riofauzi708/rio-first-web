@@ -26,46 +26,47 @@
                 </div>
             </ul>
         </nav>
-
+    <form onsubmit="addProject(event)">
         <h1>ADD MY PROJECT</h1>
     <div class="first-layer">
         <div>
-            <label class=" label-style blog-form" for="">Project Name</label>
-            <input class="blog-form input-style" type="text">
+            <label class=" label-style blog-form" for="projectName">Project Name</label>
+            <input class="blog-form input-style" id="projectName" type="text">
 
         <div class="second-layer">
             <div class="third-layer">
-                 <label class="label-style" for="">Start Date</label>
-                 <input class="input-style" type="text">
+                 <label class="label-style" for="startDate">Start Date</label>
+                 <input class="input-style" id="startDate" type="text">
             </div>
             <div class="third-layer">
-                 <label class="label-style" for="">End Date</label>
-                 <input class="input-style" type="text">
+                 <label class="label-style" for="endDate">End Date</label>
+                 <input class="input-style" id="endDate" type="text">
             </div>
         </div>
         
             <label class="label-style blog-form" for="description">Description</label>
-            <textarea class="input-style" id="description" style="width: 502px; height: 200px;"></textarea>
+            <textarea class="input-style ta-style" id="description"></textarea>
         
-            <label class="label-style blog-form" for="">Technologies</label>
+            <label class="label-style blog-form">Technologies</label>
         <div class="checkbox-style">
-            <input type="checkbox">
-            <label class="label-font" for="">Node Js</label>
-            <input style="margin-left: 120px;" type="checkbox">
-            <label class="label-font" for="">Next Js</label>
+            <input id="nodeJs" type="checkbox">
+            <label class="label-font" for="nodeJs">Node Js</label>
+            <input class="i1-style" id="nextJs" type="checkbox">
+            <label class="label-font" for="nextJs">Next Js</label>
         </div>
         <div class="checkbox-style">
-            <input type="checkbox">
-            <label class="label-font" for="">React Js</label>
-            <input style="margin-left: 116px;" type="checkbox">
-            <label class="label-font" for="">TypeScript</label>
+            <input id="reactJs" type="checkbox">
+            <label class="label-font" for="reactJs">React Js</label>
+            <input class="i2-style" type="checkbox" id="typeScript">
+            <label class="label-font" for="typeScript">TypeScript</label>
         </div>
-            <label class="label-style blog-form" for="">Upload Image</label>
-            <Input class="blog-form input-file" type="file">
-            <button class="btn-submit" onclick="submitData()">submit</button>
-        
+            <label class="label-style blog-form" for="uploadImage">Upload Image</label>
+            <Input class="blog-form input-file" id="uploadImage" type="file">
+            <button class="btn-submit" onclick="addProject">submit</button>
+
         </div>
     </div>
-        
+    </form>
+    <script src="asset/js/blog.js"></script>
     </body>
 </html>

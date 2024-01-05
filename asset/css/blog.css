@@ -24,6 +24,16 @@ h1 {
 .blog-form {
     display: flex; flex-direction: column; width: 502px;
 }
+.ta-style {
+    width: 502px; 
+    height: 200px;
+}
+.i1-style {
+    margin-left: 120px;
+}
+.i2-style {
+    margin-left: 116px;
+}
 .label-style {
 font-size: 20px; 
 font-weight: bold;
