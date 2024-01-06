@@ -1,0 +1,60 @@
+hr {
+    margin-bottom: 20px;
+}
+.blog-form-bg {
+    background-color: white; 
+    box-shadow: 0 0 1px 0; 
+    width: 280px; 
+    height: fit-content; 
+    border-radius: 10px;
+    margin: 30px 0;
+    
+}
+.project-layout {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+.img-blog-style {
+    margin: 10px 25px 0 25px; 
+    border-radius: 10px; 
+    width: 220px; 
+    height: 180px;
+}
+
+h3 {
+    margin: 2px 25px 2px 25px;
+    text-decoration: none;
+}
+.dates {
+    margin: 2px 25px 10px 25px; 
+    color: #514a4a; 
+    font-size: 11px;
+}
+.container {
+    text-align: justify; 
+    padding: 5px 20px; 
+    font-size: 10px;
+    font-weight: bold;
+}
+.icon-layout {
+    display: flex; 
+    margin: 10px 20px; 
+    gap: 5px;
+}
+.btn-setting {
+    display: flex;
+}
+.btn-edit-dlt {
+    padding: 1px;
+    background-color: #111727;
+    color: white;
+    border-radius: 10px;
+    width: 150px;
+    margin: 10px 5px;
+}
+.logo-icons {
+    width: 25px;
+    height: 25px;
+    margin: 5px 0;
+}
