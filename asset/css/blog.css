@@ -1,7 +1,10 @@
 body {
+    background-color: #f8f8f8;
+}
+.bg-body {
     background-color: #e3e7eb;
     width: auto;
-    height: 1000px;
+    height: 1150px;
 }
 h1 {
     margin: 50px auto;

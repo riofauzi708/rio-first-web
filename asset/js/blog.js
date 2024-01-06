@@ -1,4 +1,6 @@
-    function addProject(event) {
+const projects = []
+
+   function addProject(event) {
         event.preventDefault()
 
         const projectName = document.getElementById("projectName").value
@@ -11,15 +13,33 @@
         const typeScript = document.getElementById("typeScript").value
         const uploadImage = document.getElementById("uploadImage").files
 
-        const uploadImageLink = URL.createObjectURL(uploadImage[0])
+        // const uploadImageLink = URL.createObjectURL(uploadImage[0])
 
-        // localStorage.setItem("project", JSON.stringify,  {
+        // localStorage.setItem("project", JSON.stringify, ({
         //     projectName,
         //     startDate,
         //     endDate,
         //     description,
         //     uploadImageLink,
-        // })
+        // }))
+
+        const project = {
+            projectName,
+            startDate,
+            endDate,
+            description,
+            nodeJs,
+            nextJs,
+            reactJs,
+            typeScript,
+            uploadImage
+        }
+
+        projects.push(project)
+
+        renderProject()
+        console.log("projects", projects)
+
 
         console.log("projectName", projectName)
         console.log("startDate", startDate)
@@ -29,5 +49,18 @@
         console.log("nextJs", nextJs)
         console.log("reactJs", reactJs)
         console.log("typeScript", typeScript)
-        console.log("uploadImage", uploadImageLink)
+        console.log("uploadImage", uploadImage[0])
     }
+
+
+    function renderProject() {
+        let html = ""
+
+        for(let index= 0; index < projects.length; index++) {
+            html += ``
+        }
+
+        document.getElementById("projects").innerHTML = "html"
+    }
+
+    renderProject()
