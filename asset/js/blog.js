@@ -64,7 +64,7 @@ const projects = []
             <a href="blog-detail.html">
             <img class="img-blog-style" src="${projects[index].uploadImage}" alt=""></a>
             <h3><a class="text-deco" href="blog-detail.html">${projects[index].projectName}</a></h3>
-            <p class="dates">${projects[index].endDate - startDate}</p>
+            <p class="dates">durasi : 3 bulan</p>
             <p class="container">${projects[index].description}</p>
 
             <div class="icon-layout">
