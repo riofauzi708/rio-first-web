@@ -11,9 +11,9 @@ const projects = []
         const nextJs = document.getElementById("nextJs").value
         const reactJs = document.getElementById("reactJs").value
         const typeScript = document.getElementById("typeScript").value
-        const uploadImage = document.getElementById("uploadImage").files
+        let uploadImage = document.getElementById("uploadImage").files
 
-        const uploadImageLink = URL.createObjectURL(uploadImage[0])
+        uploadImage = URL.createObjectURL(uploadImage[0])
 
         // localStorage.setItem("project", JSON.stringify, ({
         //     projectName,
@@ -32,7 +32,7 @@ const projects = []
             nextJs,
             reactJs,
             typeScript,
-            uploadImage : uploadImageLink
+            uploadImage
         }
 
         projects.unshift(project)
@@ -59,12 +59,11 @@ const projects = []
         for(let index= 0; index < projects.length; index++) {
             html += `
             <div class="blog-form-bg">
-            <img class="img-blog-style" src="asset/img/painting-mountain.jpg" alt="">
-            <h3><a class="text-deco" href=""> Nama Project</a></h3>
+            <a href="blog-detail.html">
+            <img class="img-blog-style" src="${projects[index].uploadImage}" alt=""></a>
+            <h3><a class="text-deco" href="blog-detail.html">${projects[index].projectName}</a></h3>
             <p class="dates">durasi : 3 bulan</p>
-            <p class="container">Drawing is a means where everything is realized by illustrating in two-dimensional form
-                 as an outpouring or thought in various forms such as slides, portraits, paintings, films, 
-                 blurry projectors, or strips (Hamalik, 2017: 43).</p>
+            <p class="container">${projects[index].description}</p>
 
             <div class="icon-layout">
                 <img class="logo-icons" src="asset/img/logo-playstore.png" alt="">
