@@ -7,10 +7,10 @@ const projects = []
         const startDate = document.getElementById("startDate").value
         const endDate = document.getElementById("endDate").value
         const description = document.getElementById("description").value
-        const nodeJs = document.getElementById("nodeJs").value
-        const nextJs = document.getElementById("nextJs").value
-        const reactJs = document.getElementById("reactJs").value
-        const typeScript = document.getElementById("typeScript").value
+        const nodeJs = document.getElementById("nodeJs").checked
+        const nextJs = document.getElementById("nextJs").checked
+        const reactJs = document.getElementById("reactJs").checked
+        const typeScript = document.getElementById("typeScript").checked
         let uploadImage = document.getElementById("uploadImage").files
 
         uploadImage = URL.createObjectURL(uploadImage[0])
@@ -22,6 +22,8 @@ const projects = []
         //     description,
         //     uploadImageLink,
         // }))
+
+        
 
         const project = {
             projectName,
@@ -62,14 +64,14 @@ const projects = []
             <a href="blog-detail.html">
             <img class="img-blog-style" src="${projects[index].uploadImage}" alt=""></a>
             <h3><a class="text-deco" href="blog-detail.html">${projects[index].projectName}</a></h3>
-            <p class="dates">durasi : 3 bulan</p>
+            <p class="dates">${projects[index].endDate - startDate}</p>
             <p class="container">${projects[index].description}</p>
 
             <div class="icon-layout">
-                <img class="logo-icons" src="asset/img/logo-playstore.png" alt="">
-                <img class="logo-icons" src="asset/img/logo-android.png" alt="">
-                <img class="logo-icons" src="asset/img/logo-java.png" alt="">
-                <img class="logo-icons" src="asset/img/logo-javascript.png" alt="">
+                ${projects[index].nodeJs ? `<img class="logo-icons" src="asset/img/logo-playstore.png" alt="">` : ''}
+                ${projects[index].nextJs ? `<img class="logo-icons" src="asset/img/logo-android.png" alt="">` : ''}
+                ${projects[index].reactJs ? `<img class="logo-icons" src="asset/img/logo-java.png" alt="">` : ''}
+                ${projects[index].typeScript ? `<img class="logo-icons" src="asset/img/logo-javascript.png" alt="">` : ''}
             </div>
                 
             <div class="btn-setting">
