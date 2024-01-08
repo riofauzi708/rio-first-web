@@ -22,6 +22,12 @@ const projects = []
         //     description,
         //     uploadImageLink,
         // }))
+        
+        const startDateParts = startDate.split("-");
+        const endDateParts = endDate.split("-");
+        const startDateObj = new Date([startDate[2],startDateParts[1],endDateParts[0]].join("-"));
+        const endDateObj = new Date(endDate);
+        const duration = Math.ceil((endDateObj - startDateObj) / (1000 * 60 * 60 * 24));
 
         
 
@@ -29,12 +35,13 @@ const projects = []
             projectName,
             startDate,
             endDate,
+            duration,
             description,
             nodeJs,
             nextJs,
             reactJs,
             typeScript,
-            uploadImage
+            uploadImage,
         }
 
         projects.unshift(project)
@@ -52,6 +59,9 @@ const projects = []
         console.log("reactJs", reactJs)
         console.log("typeScript", typeScript)
         console.log("uploadImage", uploadImage[0])
+        console.log("startDateObj", startDateObj)
+        console.log("endDateObj", endDateObj)
+        console.log("duration", duration)
     }
 
 
@@ -64,7 +74,7 @@ const projects = []
             <a href="blog-detail.html">
             <img class="img-blog-style" src="${projects[index].uploadImage}" alt=""></a>
             <h3><a class="text-deco" href="blog-detail.html">${projects[index].projectName}</a></h3>
-            <p class="dates">durasi : 3 bulan</p>
+            <p class="dates">durasi : ${projects[index].duration}</p>
             <p class="container">${projects[index].description}</p>
 
             <div class="icon-layout">
@@ -85,6 +95,40 @@ const projects = []
         }
 
         document.getElementById("contents").innerHTML = html
+    }
+
+    function getFullTime(dates) {
+        let minutes = dates.getMinutes()
+        let hours = dates.getHours()
+        const date = dates.getDate()
+        const month = dates.getMonth();
+        const year = getFullYear();
+
+
+        if (hours < 10) {
+            hours = "0" + hours
+        }
+
+        if (minutes < 10) {
+            minutes = "0" + minutes
+        }
+
+        const months = ["January", "February", "March",
+        "April", "May", "June", "July", "August",
+        "September", "October", "November", "December"]
+
+        return `${date} ${months[month]} ${year} ${hours}:${minutes} WIB`;
+        
+    }
+
+
+    function dates() {
+        let startDate = new Date(startDate);
+        let endDate = new Date(endDate);
+        
+        
+        let diffInMonths = (endDate.getFullYear() - startDate.getFullYear()) * 12 + (endDate.getMonth() - startDate.getMonth());
+        console.log('durasi :', diffInMonths, 'bulan');
     }
 
     renderProject()
