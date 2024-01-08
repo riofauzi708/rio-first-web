@@ -8,7 +8,7 @@ body {
 }
 .based-color {
     background-color: #fefefe;
-    margin: 100px auto;
+    margin: 100px 50px;
     padding-bottom: 50px;
 }
 .section-layout {
@@ -16,44 +16,39 @@ body {
     justify-content: space-between;
 }
 .content-style {
-    margin: 70px 70px 60px 60px; 
+    margin: 70px 35px 70px 70px; 
     width: auto; 
     height: auto; 
     text-align: justify;
 }
-.ul-style {
-    list-style: none;
-}
 .link-cd {
     display: flex; 
     align-items: center; 
-    margin-top: 40px;
-}
-.contact-btn {
-    padding: 18px;
-    background-color: #111727;
-    color: white;
-    border-radius: 45px;
-    width: 100px;
-    margin-top: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-weight: bold;
-    text-decoration: none;
-}
-.download-btn {
-    margin-left: 30px; 
-    text-decoration: none;
-}
-.logo-download {
-    width: 40px; 
-    height: 40px; 
-    padding-right: 10px;
+    margin-top: 25px;
+    gap: 20px;
 }
 .logo-icon {
     display: flex; 
     gap: 15px; 
     margin-top: 40px;
+}
+.contact-btn-home {
+    text-decoration: none; 
+    margin: 15px 0 10px 0; 
+    padding: 5px; 
+    background-color: #111727; 
+    color: white; 
+    border-radius: 45px; 
+    width: 100px;
+}
+.download-btn-home {
+    text-decoration: none; 
+    color: black;
+}
+.logo-download {
+    margin: 0 12px; 
+    width: 30px; 
+    height: 30px;
 }
 .image-layout {
     display: flex;
@@ -64,12 +59,17 @@ body {
 .border-image {
     box-shadow: 0 0 1px 0 black; 
     border-radius: 5px;
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: 50px;
-    padding-bottom: 40px;
-    width: 270px;
-    height: 370px;
+    margin: 100px 70px 0 35px;
+    padding-bottom: 10px;
+    width: 360px;
+    height: fit-content;
     background-color: white;
     text-align: center;
+}
+.image-name-tag {
+    width: 360px;
+    height: 380px;
+}
+.name-tag {
+    margin: 0 0 0 0;
 }

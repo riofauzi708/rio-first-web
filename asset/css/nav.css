@@ -7,7 +7,7 @@
     color: black;
 }
 .active {
-    color: black;
+    color: blueviolet;
 }
 .navbar-logo {
     width: 50px;
@@ -35,4 +35,6 @@
     display: flex;
     gap: 30px;
     align-items: center;
+    color: black;
+    font-weight: bold;
 }

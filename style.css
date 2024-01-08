@@ -1,138 +1,165 @@
 body {
     background-color: #f8f8f8;
 }
+
 .bg-body {
     background-color: #e3e7eb;
     width: auto;
     height: 1150px;
 }
+
 h1 {
     margin: 50px auto;
     text-align: center;
 }
+
 .first-layer {
-    display: flex; 
-    width: 100%; 
+    display: flex;
+    width: 100%;
     justify-content: center;
 }
+
 .second-layer {
-    display: flex; 
+    display: flex;
     gap: 10px;
 }
+
 .third-layer {
-    display: flex; 
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
     width: 262px;
 }
+
 .blog-form {
-    display: flex; flex-direction: column; width: 502px;
+    display: flex;
+    flex-direction: column;
+    width: 502px;
 }
+
 .ta-style {
-    width: 502px; 
+    width: 502px;
     height: 200px;
 }
+
 .i1-style {
     margin-left: 120px;
 }
+
 .i2-style {
     margin-left: 116px;
 }
+
 .label-style {
-font-size: 20px; 
-font-weight: bold;
-margin-top: 20px;
-margin-bottom: 0;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 0;
 }
+
 .input-style {
-padding: 5px;
-border-radius: 5px;
-background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
 }
+
 .btn-submit {
-padding: 18px;
-background-color: #111727;
-color: white;
-border-radius: 45px;
-width: 110px;
-margin-top: 20px;
-padding-top: 10px;
-padding-bottom: 10px;
-font-weight: bold;
-margin-left: 420px;
+    padding: 18px;
+    background-color: #111727;
+    color: white;
+    border-radius: 45px;
+    width: 110px;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    margin-left: 420px;
 }
+
 .input-style {
-padding: 15px;
-border-radius: 5px;
-background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: white;
 }
+
 .checkbox-style {
-display: flex; 
-gap: 10px; 
-margin-top: 15px;
-margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
+
 .input-file {
-box-shadow: 0 0 1px 1px; 
-padding: 10px; 
-background-color: white; 
-width: 510px;
+    box-shadow: 0 0 1px 1px;
+    padding: 10px;
+    background-color: white;
+    width: 510px;
 }
+
 .label-font {
-font-size: 20px;
-color: #514a4a;
+    font-size: 20px;
+    color: #514a4a;
 }
 
 hr {
     margin-bottom: 20px;
 }
+
 .blog-form-bg {
-    background-color: white; 
-    box-shadow: 0 0 1px 0; 
-    width: 280px; 
-    height: fit-content; 
+    background-color: white;
+    box-shadow: 0 0 1px 0;
+    width: 280px;
+    height: fit-content;
     border-radius: 10px;
     margin: 30px 0;
-    
 }
+
 .project-layout {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 35px;
 }
+
 .img-blog-style {
-    margin: 10px 25px 0 25px; 
-    border-radius: 10px; 
-    width: 220px; 
+    margin: 10px 25px 0 25px;
+    border-radius: 10px;
+    width: 220px;
     height: 180px;
 }
+
 h3 {
     margin: 0 25px;
 }
+
 .text-deco {
     text-decoration: none;
     color: black;
 }
+
 .dates {
-    margin: 2px 25px 10px 25px; 
-    color: #514a4a; 
+    margin: 2px 25px 10px 25px;
+    color: #514a4a;
     font-size: 11px;
 }
+
 .container {
-    text-align: justify; 
+    text-align: justify;
     text-wrap: wrap;
-    padding: 5px 20px; 
+    padding: 5px 20px;
     font-size: 10px;
     font-weight: bold;
 }
+
 .icon-layout {
-    display: flex; 
-    margin: 10px 20px; 
+    display: flex;
+    margin: 10px 20px;
     gap: 5px;
 }
+
 .btn-setting {
     display: flex;
 }
+
 .btn-edit-dlt {
     padding: 1px;
     background-color: #111727;
@@ -141,6 +168,7 @@ h3 {
     width: 150px;
     margin: 10px 5px;
 }
+
 .logo-icons {
     width: 25px;
     height: 25px;
