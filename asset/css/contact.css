@@ -30,3 +30,29 @@ h1 {
     font-weight: bold;
     margin-left: 400px;
 }
+.form-container {
+    display: flex; 
+    flex-direction: column; 
+    width: 500px;
+}
+@media (max-width: 680px) {
+body {
+    padding: 10px;
+}
+}
+
+@media (max-width: 600px) {
+.container {
+    flex-direction: column;
+}
+
+.form-container {
+    display: flex; 
+    flex-direction: column; 
+    width: 300px;
+    
+}
+.btn-submit {
+    margin-left: 200px;
+}
+}

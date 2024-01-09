@@ -2,10 +2,51 @@
 <html>
 <head>
     <title>My Personal Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="asset/css/nav.css">
     <link rel="stylesheet" href="asset/css/index.css">
     <style>
-        
+        .container {
+            margin: 40px 80px;
+        }
+        @media only screen and (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+            .container {
+                width: 100%;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+            .navbar-ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbar-li {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 35px;
+            }
+            .navbar-link {
+                margin-bottom: 10px;
+            }
+            .navbar-contact-btn {
+                margin-top: 10px;
+            }
+            .container > div {
+                margin: 0;
+            }
+            .button-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 30px;
+            }
+            .button-container a {
+                margin: 10px 0 0 0;
+            }
+        }
     </style>
 </head>
 <body style="background-color: #e3e7eb;">
@@ -16,10 +57,10 @@
                     <img class="navbar-logo" src="asset/img/logo-dumbways.png" alt="">
                 </li>
                 <li>
-                    <a class="navbar-link" class="active" href="home.html">Home</a>
+                    <a class="navbar-link" href="home.html">Home</a>
                 </li>
                 <li>
-                    <a class="navbar-link" class="active" href="blog.html">My Project</a>
+                    <a class="navbar-link" href="blog.html">My Project</a>
                 </li>
             </div>
             <div>
@@ -31,10 +72,10 @@
     </nav>
     <div style="margin: 100px auto; padding: 50px; width: 60%; height: fit-content; box-shadow: inset;
         background-color: #ffffff;">
-        <div style="text-wrap: wrap; margin: 30px 100px;">
+        <div class="container">
             <div style="text-align: justify;">
-                <h1>Hi! Welcome to my hut</h1>
-                <p><br>My name's rio, i learn coding because i'm interest in becoming a full-stack developer.
+                <h1>Hi! Welcome to my new hut</h1>
+                <p>My name's rio, i learn coding because i'm interest in becoming a full-stack developer.
                     i'm looking transition to a career in web development and see full-stack development as a versatile
                     and in-demand skill set that can open up new career opportunities for me.
                     I have worked in various fields, ranging from the culinary industry to factories and even warehousing.
@@ -42,15 +83,15 @@
                     opportunity to work in the field of programming, I am truly eager to participate and focus my efforts
                     on obtaining the job that I desire.</p>
             </div>
-    
-            <div>
-                <button  style="text-decoration: none; margin: 15px 0 10px 0; padding: 5px; background-color: #111727; color: white; border-radius: 45px; width: 100px;"><a href="contact.html"></a>Contact</button>
+            <div class="button-container">
+                <button style="text-decoration: none; padding: 5px 10px; background-color: #111727; color: white; border-radius: 45px; width: 100px;">
+                    <a href="contact.html" style="text-decoration: none; color: white;">Contact</a></button>
                 <br>
                 <a style="text-decoration: none; color: black;" href="#">Download CV
-                <img style="margin: 0 12px; width: 30px; height: 30px;" src="asset/img/logo-image.png" alt="download here">
+                    <img style="margin: 0 12px; width: 30px; height: 30px;" src="asset/img/logo-image.png" alt="download here">
                 </a>
             </div>
-    
+
             <div style="display: flex; gap: 12px; margin: 30px 0 0 0; justify-content: center;">
                 <a href="https://www.linkedin.com/in/rio-fauzi-900858248/" target="_blank">
                     <img src="asset/img/linkedin_icon.png" alt="linkedin_icon" style="width: 30px; height: 30px;">
@@ -67,13 +108,12 @@
             </div>
             <div style="background-color: white; box-shadow: 0 0 1px 0; width: 270px; height: fit-content; border-radius: 5px; margin: 30px auto; padding-bottom: 5px; text-align: center;">
                 <a href="home.html">
-                <img style="border-radius: 5px; width: 270px; height: 270px;" src="asset/img/ai Image.jpg" alt=""></a>
+                    <img style="border-radius: 5px; width: 270px; height: 270px;" src="asset/img/ai Image.jpg" alt="">
+                </a>
                 <h2 style="margin: 0 0 0 0;">Rio Fauzi</h2>
                 <p style="margin: 0 0 0 0;">Fullstack Developer</p>
             </div>
         </div>
-
-
     </div>
 </body>
 
