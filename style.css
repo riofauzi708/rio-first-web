@@ -27,13 +27,13 @@ h1 {
 .third-layer {
     display: flex;
     flex-direction: column;
-    width: 262px;
+    width: 260px;
 }
 
 .blog-form {
     display: flex;
     flex-direction: column;
-    width: 502px;
+    width: 501px;
 }
 
 .ta-style {
@@ -56,12 +56,6 @@ h1 {
     margin-bottom: 0;
 }
 
-.input-style {
-    padding: 5px;
-    border-radius: 5px;
-    background-color: white;
-}
-
 .btn-submit {
     padding: 18px;
     background-color: #111727;
@@ -72,7 +66,7 @@ h1 {
     padding-top: 10px;
     padding-bottom: 10px;
     font-weight: bold;
-    margin-left: 420px;
+    margin-left: 415px;
 }
 
 .input-style {
@@ -92,7 +86,7 @@ h1 {
     box-shadow: 0 0 1px 1px;
     padding: 10px;
     background-color: white;
-    width: 510px;
+    width: 502px;
 }
 
 .label-font {
@@ -173,4 +167,42 @@ h3 {
     width: 25px;
     height: 25px;
     margin: 5px 0;
+}
+@media only screen and (max-width: 540px) {
+    .bg-body {
+        width: fit-content;
+    }
+    .project-layout {
+        flex-direction: column;
+        width: fit-content;
+    }
+    .blog-form-bg {
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 530px;
+        margin: 0;
+    }
+    .img-blog-style {
+        width: 250px;
+        height: 250px;
+        margin:0;
+    }
+    .first-layer {
+        width: fit-content;
+    }
+    .input-style {
+        padding: 10px;
+    }
+    .second-layer {
+        gap: 5px;
+    }
+    .container {
+        width: 250px
+    }
+    .btn-edit-dlt {
+        width: 120px;
+        margin: 10px 10px;
+    }
 }

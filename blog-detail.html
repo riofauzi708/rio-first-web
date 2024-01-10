@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Project Detail</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="asset/css/blog-detail.css">
     <link rel="stylesheet" href="asset/css/index.css">
     <link rel="stylesheet" href="asset/css/nav.css">
@@ -9,24 +10,29 @@
   <body>
     <nav class="navbar">
       <ul class="navbar-ul">
-        <div class="navbar-li">
+          <div class="navbar-li">
           <li>
-            <img class="navbar-logo" src="asset/img/logo-dumbways.png" alt="">
+              <img class="navbar-logo" src="asset/img/logo-dumbways.png" alt="">
           </li>
           <li>
-            <a class="navbar-link" class="active" href="home.html">Home</a>
+              <a class="navbar-link" class="active" href="home.html">Home</a>
           </li>
           <li>
-            <a class="navbar-link" class="active" href="blog.html">My Project</a>
-          </li>
-        </div>
-        <div>
+              <a class="navbar-link" class="active" href="blog.html">My Project</a>
+          </li></div>
+          <div>
           <li>
-            <a href="contact.html" class="navbar-contact-btn">Contact me</a>
+              <a href="contact.html" class="navbar-contact-btn">Contact me</a>
           </li>
-        </div>
+          <img class="menu-icon-style" style="cursor: pointer;" onclick="openMenu(hidden)" src="asset/img/menu-icon.webp">
+          </div>
       </ul>
-    </nav>
+  </nav>
+  <div id="display-menu" class="display-menu, hidden">
+      <a  class="navbar-link-menu menu-active" href="home.html">Home</a>
+      <a  class="navbar-link-menu menu-active" href="blog-detail.html">My Project</a>
+      <a  class="navbar-link-menu menu-active" href="contact.html">Contact Me</a>
+  </div>
 
     <h1>Dumbways Web App</h1>
     <div class="layout1">
@@ -126,5 +132,6 @@
         console.log('Parameter URL startDate, endDate, atau duration tidak ditemukan');
       }
       </script>
+      <script src="asset/js/nav.js"></script>
 
   </body>

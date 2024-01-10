@@ -18,22 +18,6 @@
                 max-width: 600px;
                 margin: 0 auto;
             }
-            .navbar-ul {
-                flex-direction: column;
-                align-items: center;
-            }
-            .navbar-li {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin-bottom: 35px;
-            }
-            .navbar-link {
-                margin-bottom: 10px;
-            }
-            .navbar-contact-btn {
-                margin-top: 10px;
-            }
             .container > div {
                 margin: 0;
             }
@@ -53,23 +37,28 @@
     <nav class="navbar">
         <ul class="navbar-ul">
             <div class="navbar-li">
-                <li>
-                    <img class="navbar-logo" src="asset/img/logo-dumbways.png" alt="">
-                </li>
-                <li>
-                    <a class="navbar-link" href="home.html">Home</a>
-                </li>
-                <li>
-                    <a class="navbar-link" href="blog.html">My Project</a>
-                </li>
-            </div>
+            <li>
+                <img class="navbar-logo" src="asset/img/logo-dumbways.png" alt="">
+            </li>
+            <li>
+                <a class="navbar-link" class="active" href="home.html">Home</a>
+            </li>
+            <li>
+                <a class="navbar-link" class="active" href="blog.html">My Project</a>
+            </li></div>
             <div>
-                <li>
-                    <a href="contact.html" class="navbar-contact-btn">Contact me</a>
-                </li>
+            <li>
+                <a href="contact.html" class="navbar-contact-btn">Contact me</a>
+            </li>
+            <img class="menu-icon-style" style="cursor: pointer;" onclick="openMenu(hidden)" src="asset/img/menu-icon.webp">
             </div>
         </ul>
     </nav>
+    <div id="display-menu" class="display-menu, hidden">
+        <a  class="navbar-link-menu menu-active" href="home.html">Home</a>
+        <a  class="navbar-link-menu menu-active" href="blog-detail.html">My Project</a>
+        <a  class="navbar-link-menu menu-active" href="contact.html">Contact Me</a>
+    </div>
     <div style="margin: 100px auto; padding: 50px; width: 60%; height: fit-content; box-shadow: inset;
         background-color: #ffffff;">
         <div class="container">
@@ -115,6 +104,7 @@
             </div>
         </div>
     </div>
+    <script src="asset/js/nav.js"></script>
 </body>
 
 </html>

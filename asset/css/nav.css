@@ -7,7 +7,10 @@
     color: black;
 }
 .active {
-    color: blueviolet;
+    color: #111727;
+}
+.menu-active {
+    background-color: #111727;
 }
 .navbar-logo {
     width: 50px;
@@ -37,4 +40,55 @@
     align-items: center;
     color: black;
     font-weight: bold;
+}
+.menu-icon-style {
+    display: none;
+}
+.navbar-link-menu {
+    display: none;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 3px;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.hidden {
+    display: none;
+}
+.display-menu {
+    display: flex; 
+    flex-direction: column; 
+    border-radius: 10px;
+}
+@media only screen and (max-width: 640px) {
+    .navbar-link {
+        display: none;
+    }
+    .active {
+        display: none;
+    }
+    .navbar-logo {
+        width: 50px;
+        height: auto;
+    }
+    .navbar-contact-btn {
+        display: none;
+    }
+    .menu-icon-style {
+        display: inline-flex;
+        width: 44px;
+        height: 44px;
+        padding: 5px;
+        margin-right: 12px;
+    }
+    .navbar-logo {
+        width: 70px;
+        height: auto;
+    }
+    .navbar-link-menu {
+        display: block;
+    }
 }

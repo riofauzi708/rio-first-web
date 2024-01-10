@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>My Project</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="asset/css/index.css">
         <link rel="stylesheet" href="asset/css/nav.css">
         <link rel="stylesheet" href="style.css">
@@ -24,9 +25,15 @@
                 <li>
                     <a href="contact.html" class="navbar-contact-btn">Contact me</a>
                 </li>
+                <img class="menu-icon-style" style="cursor: pointer;" onclick="openMenu(hidden)" src="asset/img/menu-icon.webp">
                 </div>
             </ul>
         </nav>
+        <div id="display-menu" class="display-menu, hidden">
+            <a  class="navbar-link-menu menu-active" href="home.html">Home</a>
+            <a  class="navbar-link-menu menu-active" href="blog-detail.html">My Project</a>
+            <a  class="navbar-link-menu menu-active" href="contact.html">Contact Me</a>
+        </div>
     <form onsubmit="addProject(event)">
         <h1>ADD MY PROJECT</h1>
     <div class="first-layer">
@@ -76,32 +83,35 @@
     <h1>MY PROJECT</h1>
     <div id="contents" class="project-layout">
         <!-- <div class="blog-form-bg">
-            <a href="blog-detail.html">
-            <img class="img-blog-style" src="asset/img/painting-mountain.jpg" alt=""></a>
-            <h3><a class="text-deco" href="blog-detail.html">Nama Project</a></h3>
-            <p class="dates">durasi : 3 bulan</p>
-            <p class="container">Drawing is a means where everything is realized by illustrating in two-dimensional form
-                 as an outpouring or thought in various forms such as slides, portraits, paintings, films, 
-                 blurry projectors, or strips (Hamalik, 2017: 43).</p>
-
-            <div class="icon-layout">
-                <img class="logo-icons" src="asset/img/logo-playstore.png" alt="">
-                <img class="logo-icons" src="asset/img/logo-android.png" alt="">
-                <img class="logo-icons" src="asset/img/logo-java.png" alt="">
-                <img class="logo-icons" src="asset/img/logo-javascript.png" alt="">
+            <div>
+                <a href="blog-detail.html">
+                    <img class="img-blog-style" src="asset/img/painting-mountain.jpg" alt="">
+                </a>
             </div>
-                
-            <div class="btn-setting">
-                <button class="btn-edit-dlt">edit</button>
-                <button class="btn-edit-dlt">delete</button>
-
+            <div>
+                <h3><a class="text-deco" href="blog-detail.html">Nama Project</a></h3>
+                    <p class="dates">durasi : 3 bulan</p>
+                    <p class="container">Drawing is a means where everything is realized by illustrating in two-dimensional form
+                         as an outpouring or thought in various forms such as slides, portraits, paintings, films, 
+                         blurry projectors, or strips (Hamalik, 2017: 43).
+                    </p>
+                    <div class="icon-layout">
+                        <img class="logo-icons" src="asset/img/logo-playstore.png" alt="">
+                        <img class="logo-icons" src="asset/img/logo-android.png" alt="">
+                        <img class="logo-icons" src="asset/img/logo-java.png" alt="">
+                        <img class="logo-icons" src="asset/img/logo-javascript.png" alt="">
+                    </div>
+                    <div class="btn-setting">
+                        <button class="btn-edit-dlt">edit</button>
+                        <button class="btn-edit-dlt">delete</button>
+                    </div>
             </div>
 
         </div> -->
         
     
     </div>
-
+    <script src="asset/js/nav.js"></script>
     <script src="asset/js/blog.js"></script>
     </body>
 </html>

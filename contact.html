@@ -24,9 +24,15 @@
                 <li>
                     <a href="contact.html" class="navbar-contact-btn">Contact me</a>
                 </li>
+                <img class="menu-icon-style" style="cursor: pointer;" onclick="openMenu(hidden)" src="asset/img/menu-icon.webp">
                 </div>
             </ul>
         </nav>
+        <div id="display-menu" class="display-menu, hidden">
+            <a  class="navbar-link-menu menu-active" href="home.html">Home</a>
+            <a  class="navbar-link-menu menu-active" href="blog-detail.html">My Project</a>
+            <a  class="navbar-link-menu menu-active" href="contact.html">Contact Me</a>
+        </div>
 
         <h1>GET IN TOUCH</h1>
         <div style="display: flex; width: 100%; justify-content: center;">
@@ -49,5 +55,6 @@
           </div>
         </div>
         <script src="asset/js/contact.js"></script>
+        <script src="asset/js/nav.js"></script>
     </body>
 </html>
