@@ -8,7 +8,11 @@ body {
     height: 1150px;
 }
 
-h1 {
+.h1-add {
+    margin: 50px auto;
+    text-align: center;
+}
+.h1-project {
     margin: 50px auto;
     text-align: center;
 }
@@ -168,7 +172,7 @@ h3 {
     height: 25px;
     margin: 5px 0;
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 560px) {
     .bg-body {
         width: fit-content;
     }
@@ -205,4 +209,9 @@ h3 {
         width: 120px;
         margin: 10px 10px;
     }
+    .h1-project {
+        margin: 50px auto;
+        width: 530px;
+    }
+    
 }

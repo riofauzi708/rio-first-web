@@ -9,13 +9,40 @@
         .container {
             margin: 40px 80px;
         }
-        @media only screen and (max-width: 768px) {
+        .border-name-tag {
+            background-color: white; 
+            box-shadow: 0 0 1px 0; 
+            width: 270px; 
+            height: fit-content; 
+            border-radius: 5px; 
+            margin: 30px auto; 
+            padding-bottom: 5px; 
+            text-align: center;
+            justify-content: center;
+        }
+        .name-tag-style {
+            border-radius: 5px; 
+            width: 270px; 
+            height: 270px;
+        }
+        .icon-style-index {
+            width: 30px; 
+            height: 30px;
+        }
+        p {
+            font-size: 16px;
+        }
+        .logo-image {
+            margin: 0 12px; 
+            width: 30px; 
+            height: 30px;
+        }
+        @media only screen and (max-width: 760px) {
             body {
                 padding: 20px;
             }
             .container {
                 width: 100%;
-                max-width: 600px;
                 margin: 0 auto;
             }
             .container > div {
@@ -29,6 +56,57 @@
             }
             .button-container a {
                 margin: 10px 0 0 0;
+            }
+            p {
+                font-size: 15px;
+            }
+            .logo-image {
+                width: 20px; 
+                height: 20px;
+            }
+            .border-name-tag {
+                width: auto;
+                height: fit-content;
+            }
+            .name-tag-style {
+                width: 100%; 
+                height: fit-content;
+        }
+        }
+        @media only screen and (max-width: 420px) {
+            .container {
+                width: 100%;
+                margin: 0 auto;
+            }
+            .border-name-tag {
+                width: auto; 
+                height: fit-content;
+
+            }
+            .button-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 30px;
+            }
+            .button-container a {
+                margin: 10px 0 0 0;
+            }
+            .name-tag-style {
+                width: 100%; 
+                height: fit-content;
+            }
+            .icon-style-index {
+                justify-content: center;
+                width: 20px; 
+                height: 20px;
+            }
+            p {
+                font-size: 10px;
+            }
+            .logo-image {
+                width: 15px; 
+                height: 15px;
             }
         }
     </style>
@@ -62,13 +140,11 @@
     <div style="margin: 100px auto; padding: 50px; width: 60%; height: fit-content; box-shadow: inset;
         background-color: #ffffff;">
         <div class="container">
+            <h1>Hi! Welcome to my new hut</h1>
             <div style="text-align: justify;">
-                <h1>Hi! Welcome to my new hut</h1>
                 <p>My name's rio, i learn coding because i'm interest in becoming a full-stack developer.
                     i'm looking transition to a career in web development and see full-stack development as a versatile
-                    and in-demand skill set that can open up new career opportunities for me.
-                    I have worked in various fields, ranging from the culinary industry to factories and even warehousing.
-                    In reality, I am more inclined towards technology, and after realizing that I have the
+                    and in-demand skill set that can open up new career opportunities for me. after realizing that I have the
                     opportunity to work in the field of programming, I am truly eager to participate and focus my efforts
                     on obtaining the job that I desire.</p>
             </div>
@@ -77,30 +153,30 @@
                     <a href="contact.html" style="text-decoration: none; color: white;">Contact</a></button>
                 <br>
                 <a style="text-decoration: none; color: black;" href="#">Download CV
-                    <img style="margin: 0 12px; width: 30px; height: 30px;" src="asset/img/logo-image.png" alt="download here">
+                    <img class="logo-image" src="asset/img/logo-image.png" alt="download here">
                 </a>
             </div>
 
             <div style="display: flex; gap: 12px; margin: 30px 0 0 0; justify-content: center;">
                 <a href="https://www.linkedin.com/in/rio-fauzi-900858248/" target="_blank">
-                    <img src="asset/img/linkedin_icon.png" alt="linkedin_icon" style="width: 30px; height: 30px;">
+                    <img class="icon-style-index" src="asset/img/linkedin_icon.png" alt="linkedin_icon">
                 </a>
                 <a href="https://www.instagram.com/rio_fauzii/" target="_blank">
-                    <img src="asset/img/logo-ig.png" alt="logo-ig" style="width: 30px; height: 30px;">
+                    <img class="icon-style-index" src="asset/img/logo-ig.png" alt="logo-ig">
                 </a>
                 <a href="https://www.facebook.com/rio.fauzi.378/" target="_blank">
-                    <img src="asset/img/logo-fb.png" alt="logo-fb" style="width: 30px; height: 30px;">
+                    <img class="icon-style-index" src="asset/img/logo-fb.png" alt="logo-fb">
                 </a>
                 <a href="https://github.com/riofauzi708" target="_blank">
-                    <img src="asset/img/github-icon.png" alt="logo-github" style="width: 30px; height: 30px;">
+                    <img class="icon-style-index" src="asset/img/github-icon.png" alt="logo-github">
                 </a>
             </div>
-            <div style="background-color: white; box-shadow: 0 0 1px 0; width: 270px; height: fit-content; border-radius: 5px; margin: 30px auto; padding-bottom: 5px; text-align: center;">
+            <div class="border-name-tag">
                 <a href="home.html">
-                    <img style="border-radius: 5px; width: 270px; height: 270px;" src="asset/img/ai Image.jpg" alt="">
+                    <img class="name-tag-style" src="asset/img/ai Image.jpg" alt="">
                 </a>
-                <h2 style="margin: 0 0 0 0;">Rio Fauzi</h2>
-                <p style="margin: 0 0 0 0;">Fullstack Developer</p>
+                <h2 style="margin: 0;">Rio Fauzi</h2>
+                <p style="margin: 0;">Fullstack Developer</p>
             </div>
         </div>
     </div>
