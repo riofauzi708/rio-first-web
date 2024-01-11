@@ -8,7 +8,7 @@
         <style>
           h1 {
             text-align: center;
-            margin: 50px auto;
+            margin: 35px auto;
           }
           .list-testi {
             background-color: white; 
@@ -29,6 +29,12 @@
           }
           .p2 {
             margin: 15px 0 5px 250px; 
+            font-weight: bold;
+          }
+          .btn-color {
+            background-color: #111727;
+            color: white;
+            padding: 1px 25px;
             font-weight: bold;
           }
 
@@ -65,9 +71,18 @@
           <a  class="navbar-link-menu menu-active" href="contact.html">Contact Me</a>
           <a  class="navbar-link-menu menu-active" href="testimonial.html">Testimonials</a>
         </div>
-        <h1>MY TESTIMONIAL</h1>
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 25px;">
-          <div class="list-testi">
+        <h1>My Testimonials</h1>
+        <p style="margin: 20px auto; text-align: center;">Rating By Star</p>
+        <div style="display: flex; flex-wrap: wrap; margin: 20px 0 40px 0; gap: 30px; justify-content: center; align-items: center;">
+          <button class="btn-color">All</button>
+          <button class="btn-color">1★</button>
+          <button class="btn-color">2★</button>
+          <button class="btn-color">3★</button>
+          <button class="btn-color">4★</button>
+          <button class="btn-color">5★</button>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 25px;" id="testimonials">
+          <!-- <div class="list-testi">
             <img class="img-testi" src="asset/img/testimonial1.jpg" alt="">
             <p class="p1">"Ini sangat bagus"</p>
             <p class="p2">- Rio fauzi</p>
@@ -91,13 +106,13 @@
             <img class="img-testi" src="asset/img/testimonial5.jpg" alt="">
             <p class="p1">"Saya setuju"</p>
             <p class="p2">- Dima ikmila</p>
-          </div>
+          </div> -->
           
           
 
         </div>
-          
-        <script src="asset/js/nav.js"></script>
+      <script src="asset/js/testimonial.js"></script>
+      <script src="asset/js/nav.js"></script>
     </body>
 
 </html>
