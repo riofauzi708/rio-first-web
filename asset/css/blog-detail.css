@@ -18,6 +18,7 @@ h1 {
     flex-direction: column; 
     flex-wrap: wrap; 
     margin: 0 50px 10px 5px;
+    font-size: 20px;
 }
 .h3-1 {
     margin: 20px 10px 0 10px;
@@ -35,7 +36,7 @@ h1 {
 }
 .thing-layout {
     margin-left: 10px; 
-    font-size: 17px; 
+    font-size: 18px; 
     color: #514a4a;
 }
 .img-icon-layout {
@@ -46,6 +47,15 @@ h1 {
 .p-content {
     margin: 40px 70px; 
     text-align: justify;
+    font-size: 22px;
+}
+@media only screen and (max-width: 1265px) {
+    .p-content {
+        font-size: 20px;
+    }
+    .thing-layout {
+        font-size: 14px;
+    }
 }
 @media only screen and (max-width: 1024px) {
     body {
@@ -77,5 +87,19 @@ h1 {
     .p-content {
         margin: 0;
     }
+    .p-content {
+        font-size: 16px;
+    }
+    .thing-layout {
+        font-size: 12px;
+    }
 
+}
+@media only screen and (max-width: 450px) {
+    .p-content {
+        font-size: 14px;
+    }
+    .thing-layout {
+        font-size: 10px;
+    }
 }
