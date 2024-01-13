@@ -1,0 +1,42 @@
+// Contoh kelas "Buku"
+class Buku {
+  constructor(judul, penulis, tahun_terbit) {
+    this.judul = judul;
+    this.penulis = penulis;
+    this.tahun_terbit = tahun_terbit;
+  }
+
+  tampilkanInformasi() {
+    console.log(`Judul: ${this.judul}`);
+    console.log(`Penulis: ${this.penulis}`);
+    console.log(`Tahun Terbit: ${this.tahun_terbit}`);
+  }
+}
+
+// Contoh kelas "BukuPustaka" yang mewarisi dari kelas "Buku"
+class BukuPustaka extends Buku {
+  constructor(judul, penulis, tahun_terbit, lokasi) {
+    super(judul, penulis, tahun_terbit);
+    this.lokasi = lokasi;
+  }
+
+  tampilkanInformasi() {
+    super.tampilkanInformasi();
+    console.log(`Lokasi: ${this.lokasi}`);
+  }
+}
+
+// Membuat objek dari kelas "Buku"
+const buku1 = new Buku("Judul Buku 1", "Penulis 1", 2022);
+const buku2 = new Buku("Judul Buku 2", "Penulis 2", 2023);
+
+// Memanggil metode pada objek "Buku"
+buku1.tampilkanInformasi();
+console.log("-----------------------");
+buku2.tampilkanInformasi();
+
+// Membuat objek dari kelas "BukuPustaka"
+const bukuPustaka = new BukuPustaka("Judul Buku Pustaka", "Penulis Pustaka", 2024, "Rak 1");
+
+// Memanggil metode pada objek "BukuPustaka"
+bukuPustaka.tampilkanInformasi();

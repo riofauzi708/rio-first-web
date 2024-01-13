@@ -1,0 +1,47 @@
+Ada beberapa contoh HOF yang umum digunakan dalam pemrograman fungsional. Berikut adalah beberapa contoh HOF yang sering digunakan:
+
+1. **map**: HOF map digunakan untuk mentransformasi setiap elemen dalam sebuah array dan mengembalikan array baru dengan hasil transformasi. Fungsi yang diteruskan ke map akan diterapkan pada setiap elemen array. Contoh penggunaan map:
+
+```javascript
+const angka = [1, 2, 3, 4, 5];
+const hasil = angka.map((elemen) => elemen * 2);
+console.log(hasil); // Output: [2, 4, 6, 8, 10]
+```
+
+2. **filter**: HOF filter digunakan untuk memfilter elemen dalam sebuah array berdasarkan kondisi tertentu dan mengembalikan array baru dengan elemen-elemen yang memenuhi kondisi tersebut. Fungsi yang diteruskan ke filter akan menentukan kondisi filter. Contoh penggunaan filter:
+
+```javascript
+const angka = [1, 2, 3, 4, 5];
+const hasil = angka.filter((elemen) => elemen % 2 === 0);
+console.log(hasil); // Output: [2, 4]
+```
+
+3. **reduce**: HOF reduce digunakan untuk mengurangi elemen-elemen dalam sebuah array menjadi satu nilai tunggal. Fungsi yang diteruskan ke reduce akan menentukan operasi pengurangan. Contoh penggunaan reduce:
+
+```javascript
+const angka = [1, 2, 3, 4, 5];
+const hasil = angka.reduce((total, elemen) => total + elemen, 0);
+console.log(hasil); // Output: 15
+```
+
+4. **forEach**: HOF forEach digunakan untuk melakukan iterasi pada setiap elemen dalam sebuah array dan menjalankan fungsi untuk setiap elemen tersebut. Perbedaannya dengan map adalah forEach tidak mengembalikan array baru. Contoh penggunaan forEach:
+
+```javascript
+const angka = [1, 2, 3, 4, 5];
+angka.forEach((elemen) => console.log(elemen));
+// Output: 1
+//         2
+//         3
+//         4
+//         5
+```
+
+5. **sort**: HOF sort digunakan untuk mengurutkan elemen dalam sebuah array berdasarkan kriteria tertentu. Fungsi yang diteruskan ke sort akan menentukan aturan pengurutan. Contoh penggunaan sort:
+
+```javascript
+const angka = [5, 2, 8, 1, 4];
+const hasil = angka.sort((a, b) => a - b);
+console.log(hasil); // Output: [1, 2, 4, 5, 8]
+```
+
+Itu hanya beberapa contoh HOF yang umum digunakan dalam pemrograman fungsional. Ada banyak HOF lainnya seperti find, some, every, dan banyak lagi. Konsep HOF memungkinkan kita untuk menggunakan fungsi sebagai nilai yang dapat diteruskan dan dikembalikan, sehingga membuat kode lebih ekspresif dan modular.
