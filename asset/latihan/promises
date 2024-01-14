@@ -1,0 +1,21 @@
+function getData() {
+  return new Promise((resolve, reject) => {
+    // Operasi asynchronous
+    setTimeout(() => {
+      const data = "Data berhasil diambil";
+      // Resolve Promise dengan data
+      resolve(data);
+      // Reject Promise dengan pesan error jika terjadi kesalahan
+      // reject("Terjadi kesalahan dalam mengambil data");
+    }, 2000);
+  });
+}
+
+// Menggunakan Promise
+getData()
+  .then((data) => {
+    console.log(data); // Menangani kasus ketika Promise berhasil
+  })
+  .catch((error) => {
+    console.error(error); // Menangani kasus ketika Promise gagal
+  });

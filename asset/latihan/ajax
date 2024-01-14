@@ -1,0 +1,44 @@
+// 1. Menggunakan XMLHttprequest:
+
+// Membuat objek XMLHttpRequest
+var xhr = new XMLHttpRequest();
+
+// Menetapkan callback untuk menangani perubahan status permintaan
+xhr.onreadystatechange = function() {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+        if (xhr.status === 200) {
+            // Permintaan berhasil
+            var response = xhr.responseText;
+            // Lakukan sesuatu dengan respons yang diterima
+        } else {
+            // Permintaan gagal
+            console.error('Error: ' + xhr.status);
+        }
+    }
+};
+
+// Mengirim permintaan
+xhr.open('GET', 'url_tujuan', true/false); //METHOD: GET, POST, PUT, PATCH, DELETE
+xhr.send();
+
+
+
+// 2. Menggunakan fetch API:
+
+// Mengirim permintaan menggunakan fetch API
+fetch('url_tujuan')
+    .then(function(response) {
+        if (response.ok) {
+            // Permintaan berhasil
+            return response.text();
+        } else {
+            // Permintaan gagal
+            throw new Error('Error: ' + response.status);
+        }
+    })
+    .then(function(data) {
+        // Lakukan sesuatu dengan data yang diterima
+    })
+    .catch(function(error) {
+        console.error(error);
+    });
